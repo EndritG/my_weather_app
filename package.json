@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/EndritG/weather-app#readme",
   "dependencies": {
+    "chalk": "^2.4.1",
     "request": "^2.88.0"
   }
 }
