@@ -1,26 +1,17 @@
 {
-  "name": "weather-app",
+  "name": "web-server",
   "version": "1.0.0",
-  "description": "WeatherAPP with NodeJS and ExpressJS ",
+  "description": "Weather APP",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EndritG/weather-app.git"
-  },
-  "keywords": [
-    "weather"
-  ],
   "author": "Endrit Germizaj",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EndritG/weather-app/issues"
-  },
-  "homepage": "https://github.com/EndritG/weather-app#readme",
   "dependencies": {
-    "chalk": "^2.4.1",
+    "express": "^4.16.4",
+    "hbs": "^4.0.1",
+    "nodemon": "^2.0.15",
     "request": "^2.88.0"
   }
 }
