@@ -9,14 +9,14 @@ const forecast = (latitude, longitude, callback) => {
     longitude +
     '&units=m';
 
-  request({ url: url, json: true }, (error, response) => {
+  request({ url, json: true }, (error, { body }) => {
     if (error) {
       callback('Unable to connect to weather service!', undefined);
-    } else if (response.body.error) {
+    } else if (body.error) {
       callback('Unable to find location', undefined);
     } else {
       let unitName = unit === 'm' ? 'degrees' : 'fahrenheit';
-      const weather = response.body;
+      const weather = body;
       console.log(
         `Name: ${chalk.yellow(weather.location.name)} Country: ${chalk.yellow(
           weather.location.country
